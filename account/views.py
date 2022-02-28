@@ -1,6 +1,6 @@
 from sys import modules
 from django.shortcuts import redirect, render
-from itsdangerous import Serializer
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .serializers import accountSerializer
 from rest_framework import viewsets
 from .models import account
